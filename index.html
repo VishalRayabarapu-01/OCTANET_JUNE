@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(17, 17, 78);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav,
+        .mainContent {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 45px;
+            font-size: 1.3em;
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            font-size: 22px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 22px;
+        }
+
+        .leftSide {
+            margin: 0px 22px;
+            font-size: 2em;
+        }
+
+        .devImg {
+            margin: 30px;
+            height: 26em;
+            width: 30em;
+        }
+
+        .content {
+            font-size: 1.3em;
+            font-weight: bold;
+            font-family: 'poppins';
+            margin: 3em 20px;
+            padding: 1em 0em;
+        }
+
+        #element,
+        .typed-cursor {
+            font-size: 3em;
+            color: red;
+            position: relative;
+            top: 16px;
+        }
+
+        .description {
+            position: relative;
+            top: 13px;
+            left: 6px;
+            font-size: 35px;
+        }
+
+        .links {
+            position: relative;
+            top: 4rem;
+        }
+
+        .spacer {
+            margin-right: 30px;
+        }
+
+        .icons:hover {
+            font-size: 2em;
+            line-height: 0.03125em;
+            vertical-align: -0.1875em;
+        }
+        .urls{
+            margin-left: 40px;
+        }
+        .contactWord {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="leftSide">Vishal's Portfolio</div>
+        <div class="rightSide">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Hire Me</a></li>
+                <li><a href="">Certificates</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="mainContent">
+            <div class="content">
+                <div class="description">Hello Everyone !!!!<br></div>
+                <div class="description">Known Technologies <br></div>
+                <span id="element"></span>
+                <div class="links">
+                    <div class="contactWord">Contact Me :</div>
+                    <div class="urls">
+                        <a href="https://www.linkedin.com/in/vishal-rayabarapu-45174722a/" target="_blank"><i class="fa-brands icons spacer fa-linkedin-in fa-xl"></i></a>
+                        <a href="https://instagram.com/vishalchinnu4382?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands icons spacer fa-instagram fa-xl"></i></a>
+                        <a href="https://github.com/VishalRayabarapu-01" target="_blank"><i class="fa-brands icons spacer fa-github fa-xl"></i></a>
+                        <!-- <a href=""><i class="fa-brands icons spacer fa-facebook-f fa-xl"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <img src="dev.png" alt="" class="devImg">
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['HTML', 'CSS', 'JS', 'MYSQL', 'JAVA', 'SPRING BOOT'],
+            typeSpeed: 150,
+        });
+    </script>
+</body>
+
+</html>
